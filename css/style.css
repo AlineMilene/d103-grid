@@ -27,9 +27,13 @@ body{
                          'header header header aside'
                          'section section section aside'
                          'footer footer footer footer';
-    grid-template-columns: 24vw 24.5vw 25vw 25vw;
-    grid-template-rows: 10vh 40vh 50vh 10vh; 
+    grid-template-columns: 25vw 25vw 25vw 25vw;
+    grid-template-rows: 8vh 40vh 51.95vh 10vh; 
     margin: 0;
+}
+body::-webkit-scrollbar{
+    width: 0px; /*Remove scrollbar space*/
+    background: transparent; /*Opttinional: just make scrollbar invisible*/
 }
 footer{
     grid-area: footer;
