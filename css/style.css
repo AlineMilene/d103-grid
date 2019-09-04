@@ -1,5 +1,23 @@
 aside{
+    background-color:#2a2e39;
     grid-area: aside;
+}
+h2{
+    text-align: center;
+}
+aside p{
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+}
+aside h2, p{
+    color:white;
+    padding: 0 15px;
+}
+aside ul{
+    list-style-image: url("../images/nuvem2.png");
+}
+aside ul,li{
+    color:white;
 }
 body{
     cursor: url("../images/kunai.png"),default;
@@ -9,8 +27,8 @@ body{
                          'header header header aside'
                          'section section section aside'
                          'footer footer footer footer';
-    grid-template-columns: 25vw 25vw 25vw 25vw;
-    grid-template-rows: 10vh 40vh 40vh 10vh; 
+    grid-template-columns: 24vw 24.5vw 25vw 25vw;
+    grid-template-rows: 10vh 40vh 50vh 10vh; 
     margin: 0;
 }
 footer{
