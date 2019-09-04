@@ -1,17 +1,25 @@
 aside{
     background-color:#2a2e39;
+    border-width: 5pt;
+    border-color: #bb2127;
+    border-style: double;
     grid-area: aside;
 }
+aside h2{
+    text-align: center;
+} 
 aside p{
     font-family: 'Montserrat', sans-serif;
     text-align: justify;
 }
 aside h2, p{
     color:white;
+    margin: 5px;
     padding: 0 15px;
 }
 aside ul{
     list-style-image: url("../images/nuvem2.png");
+    margin: 5px;
 }
 aside ul,li{
     color:white;
@@ -25,7 +33,7 @@ body{
                          'section section section aside'
                          'footer footer footer footer';
     grid-template-columns: 25vw 25vw 25vw 25vw;
-    grid-template-rows: 8vh 40vh 80vh 10vh; 
+    grid-template-rows: 8vh 40vh 70vh 10vh; 
     margin: 0;
 }
 body::-webkit-scrollbar{
@@ -59,19 +67,45 @@ nav > img {
     width: 60px;
 }
 section{
+    background-color: #2a2e39;
+    color: white;
     grid-area: section;
+
+}
+section label{
+    margin: 0 10px;
 }
 section div{
     display: flex;
     justify-content: center;
 }
 section h2{
-    margin: 0;
+    margin: 10px;
     text-align: center;
 }
 section input:focus{
     background-color: black;
 }
 section input::placeholder{
-    color:red;
+    color:gray;
+}
+footer{
+    background-color: #66686e;
+    color:white;
+    height: 101px;;
+}
+footer div{
+    display: flex;
+    justify-content: space-around;
+}
+footer h3,h4{
+    margin: 5px 0;
+    text-align: center;
+    width: 100%;
+}
+footer img{
+    width: 30px;
+}
+footer img:hover{
+    border: double;
 }
